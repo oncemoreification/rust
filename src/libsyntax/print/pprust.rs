@@ -359,10 +359,10 @@ pub fn print_region(s: @ps, prefix: ~str, region: @ast::region, sep: ~str) {
             return;
         }
         ast::re_static => {
-            word_space(s, ~"static")
+            word(s.s, ~"static")
         }
         ast::re_self => {
-            word_space(s, ~"self")
+            word(s.s, ~"self")
         }
         ast::re_named(name) => {
             print_ident(s, name);

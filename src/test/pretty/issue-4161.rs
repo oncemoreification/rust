@@ -8,6 +8,14 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-// pp-exact:example2.pp
+// pp-exact
+
+struct Foo {
+    i: int,
+}
+
+impl Foo {
+    fn bar(&self) -> &self/int { &self.i }
+}
 
 fn main() { }
